@@ -5,7 +5,7 @@ const cors = require('cors');
 const playerRoutes = require('./routes/playerRoutes');
 
 const app = express();
-const PORT = 3000;
+const PORT = 10000;
 
 // Middlewares
 app.use(bodyParser.json());
