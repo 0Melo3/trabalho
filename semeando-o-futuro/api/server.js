@@ -5,7 +5,7 @@ const cors = require('cors');
 const playerRoutes = require('./routes/playerRoutes');
 
 const app = express();
-const PORT = 10000;
+const PORT = process.env.PORT || 3000;
 
 // Middlewares
 app.use(bodyParser.json());
@@ -25,5 +25,5 @@ app.use('/players', playerRoutes);
 
 // Iniciar servidor
 app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
