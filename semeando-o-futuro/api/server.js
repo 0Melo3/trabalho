@@ -27,3 +27,7 @@ app.use('/players', playerRoutes);
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
+
+app.get('/', (req, res) => {
+  res.send('🚀 API da Fazendinha está online!');
+});
